@@ -1,0 +1,22 @@
+<h2>{{title}}</h2>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Enemy Name</th>
+        <th scope="col">Category</th>
+        <th scope="col">Challenge</th>
+        <th scope="col">image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>{{enemy.name}}</td>
+        <td>{{enemy.category}}</td>
+        <td>{{enemy.challenge}}</td>
+        <td><img [src]="enemy.image" [alt]="enemy.name"></td>
+      </tr>
+    </tbody>
+  </table>
