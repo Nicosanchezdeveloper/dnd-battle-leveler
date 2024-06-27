@@ -11,12 +11,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
+      <tr *ngFor="let enemy of enemies; let i = index">
+        <th scope="row">{{i + 1}}</th>
         <td>{{enemy.name}}</td>
         <td>{{enemy.category}}</td>
         <td>{{enemy.challenge}}</td>
-        <td><img [src]="enemy.image" [alt]="enemy.name"></td>
+        <td><img class="container-image" [src]="enemy.image" [alt]="enemy.name"></td>
       </tr>
     </tbody>
   </table>
